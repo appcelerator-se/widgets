@@ -7,9 +7,37 @@
 	height: Ti.UI.SIZE,
 	width: Ti.UI.SIZE
 }
+"#chartTitleLbl": {
+	font: {
+		fontSize: 16,
+		fontWeight: 'bold'
+	},
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+}
 "#tiChartVw": {
-	// height: "30",
-	// width: "300"
-	// height: Ti.UI.FILL,
-	// width: Ti.UI.FILL
+	layout: "vertical",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL
+}
+"#barChartVw": {
+	layout: "horizontal",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL
+}
+"#barChartContVw": {
+	layout: "horizontal",
+	width: Ti.UI.FILL,
+	height: "80%"
+}
+"#barChartYLegendVw": {
+	width: "20%",
+	height: Ti.UI.FILL
+}
+"#barChartXLegendVw": {
+	width: "80%",
+	height: "20%",
+	right: "0",
+	top: "0"
 }

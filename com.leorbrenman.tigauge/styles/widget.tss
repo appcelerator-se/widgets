@@ -11,23 +11,36 @@
 	color: 'white',
 	left: '5'
 }
+"#tiGaugeVw": {
+	//height: '40',
+	height: Ti.UI.SIZE,
+	width: '100%',
+	top: '5',
+	layout: "vertical"
+}
+"#tiGaugeTitleVw": {
+	height: Ti.UI.SIZE,
+	width: '100%',
+}
 "#tiGaugeTitleLbl": {
 	color: 'black',
 	left: 0
 }
-"#tiGaugeVw": {
-	height: '25',
-	width: '100%',
-	top: '5'
+"#tiGaugeTitleRightLbl": {
+	color: 'black',
+	right: 0,
+	font: {
+		fontWeight: 'normal'
+	}
 }
 "#tiGaugeBGVw": {
-	height: Ti.UI.FILL,
+	height: "25",
 	backgroundColor: '#e5e5e5',
 	borderRadius: '4'
 }
 "#tiGaugeMeterVw": {
-	height: Ti.UI.FILL,
+	height: "25",
 	backgroundColor: '#4ba90a',
 	borderRadius: '4',
-	right: '50%'
+	right: '99%'
 }

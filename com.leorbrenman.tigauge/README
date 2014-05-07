@@ -1,25 +1,47 @@
 Gauge Widget
 
-Modeled after the Mint Budget Visualization
+Modeled after the Mint iPhone app Budget Visualization gauge
 
-Widget height is fixed and width fills to parent container size
+Widget height is programmable and width fills to parent container size
 
 Widget has a default setting and can be configured at instantiation time via XML, TSS or JS and can also be modified at run time using built-in methods in JS
 
 
 * Arguments:
-percent (number from 1-100)
-color (titanium color)
-overlayText (string)
-overlayColor (titanium color)
+percent
+gaugeColor
+gaugeBGColor
+overlayText
+overlayTextColor
+gaugeHeight
+isAnimationOn
+titleText
+titleRightText
+isAnimationOn (animation can only be enabled on iOS)
 
 
 * Methods:
 setPercent
+getPercent
 setGaugeColor
+getGaugeColor
 setGaugeBackgroundColor
+getGaugeBackgroundColor
 setOverlayText
+getOverlayText
 setOverlayTextColor
+getOverlayTextColor
+enableAnimation
+disableAnimation
+getAnimationSetting
+setGaugeHeight
+getGaugeHeight
+setTitle
+getTitle
+clearTitle
+setTitleRight
+getTitleRight
+clearTitleRight
 
 
 Sample instantiation:

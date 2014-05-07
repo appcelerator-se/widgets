@@ -8,14 +8,14 @@ Widget has a default setting and can be configured at instantiation time via XML
 
 
 * Arguments:
-height (titanium height)
-width (titanium height)
-negativeColor (titanium color)
-displayLegend (titanium boolean)
-displaySpacers (titanium boolean)
-colors (array of titanium colors)
-data (array of 2D data, e.g. [{"month": "Jan", "val": 33}, {"month": "Feb", "val": 7}, ...)
-labelColor (titanium color)
+height
+width
+negativeColor
+displayLegend
+displaySpacers
+colors
+data
+labelColor
 
 
 * Methods:
@@ -70,5 +70,5 @@ OR
 "#mySmallBarChart2": {
 	data: [{"month": "Jan", "val": 3}, {"month": "Feb", "val": 11}, {"month": "Mar", "val": 4}, {"month": "Apr", "val": 2} , {"month": "May", "val": -11} , {"month": "May", "val": 7} ,  {"month": "Jun", "val": 5},  {"month": "Jul", "val": -5}],
 	negativeColor: "#D74B4B",
-	colors: ["#354B5E"]
+	colors: "#354B5E"
 }
