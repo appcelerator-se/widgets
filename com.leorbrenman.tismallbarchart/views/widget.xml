@@ -1,0 +1,7 @@
+<Alloy>
+	<View  height="Ti.UI.SIZE" width="Ti.UI.SIZE" layout="vertical">
+		<View height="10" />
+		<View id="tiChartVw" layout="vertical" />
+		<View height="10" />
+	</View>
+</Alloy>

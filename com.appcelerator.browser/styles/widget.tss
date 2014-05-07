@@ -1,0 +1,68 @@
+"Label":{
+	color: "#ccc",
+	font: {
+		fontFamily: "Arial",
+		fontSize: 24
+	},
+	left: 5
+},
+"#wrapper":{
+	layout:"vertical"
+},
+
+"#header":{
+	backgroundColor: "#ececec",
+	height: 50
+},
+
+"#browserNavigation":{
+	left: 5,
+	bottom: 5,
+	height: Ti.UI.SIZE,
+	width: 100,
+	layout:"horizontal"
+},
+
+"#title":{
+	left: 75,
+	right: 75,
+	bottom: 10,
+	height: 20,
+	borderRadius: 5,
+	backgroundColor: "#ccc",
+	color: "#999",
+	font:{
+		fontSize: 10,
+		fontFamily: "Arial"
+	},
+	textAlign:"center"
+}
+
+"#closeBtn":{
+	right: 5,
+	bottom:5,
+	height: Ti.UI.SIZE,
+	color: "#999"
+},
+
+"#backBtn[platform=android]":{
+	font:{
+		fontSize:18
+	},
+	bottom: 3
+},
+
+"#forwardBtn[platform=android]":{
+	font:{
+		fontSize:18
+	},
+	bottom: 3
+},
+
+"#webView":{
+	willHandleTouches:false
+}
+
+
+
+

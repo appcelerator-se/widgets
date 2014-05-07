@@ -1,0 +1,111 @@
+"#wrapper": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	landscape: {
+		backgroundColor: "#EEE"
+	},
+	portrait: {
+		backgroundColor: "#222"
+	}
+},
+"ListView":{
+	backgroundColor: "#EEE"
+},
+"ListView[platform=ios]":{
+	separatorStyle: Titanium.UI.iPhone.ListViewSeparatorStyle.NONE
+},
+"ItemTemplate":{
+	top:5,
+	height: 70,
+	backgroundColor: "#EEE"
+},
+"ItemTemplate[platform=ios]":{
+	selectionStyle:Titanium.UI.iPhone.ListViewCellSelectionStyle.NONE 
+}, 
+"Label":{
+	touchEnabled:false
+},
+"#iconWrapper":{
+	top:10,
+	left:15,
+	height: 60,
+	width: 60,
+	backgroundColor: "#fff",
+	touchEnabled:false
+},
+"#detailWrapper":{
+	top:10,
+	left:85,
+	height: Ti.UI.FILL,
+	right: 15,
+	backgroundColor: "#fff"
+},
+"#buttonWrapper":{
+	width: 40,
+	height: Ti.UI.FILL,
+	right:0,
+	backgroundColor:"#fbfbfb"
+},
+"#detailView":{
+	backgroundColor: "#fff",
+	left:0,
+	width: 220
+},
+"#detailView[platform=android]":{
+	width: Ti.UI.FILL
+},
+"#hiddenView":{
+	backgroundColor: "#0196D7",
+	touchEnabled:false
+},
+"#icon" : {
+    width: 30, 
+    height: 30,
+    touchEnabled:false
+},
+"#title" : {
+    color: 'black',
+    font: { fontFamily:'Arial', fontSize: 14, fontWeight:'bold' },
+    left: 10, 
+    top: 10,
+    width: 200
+},
+"#subtitle" : {
+    color: 'black',
+    font: { fontFamily:'Arial', fontSize: 10 },
+    left: 10, 
+    top: 30,
+    width: 200
+},
+"#meta" : {
+    color: 'gray',
+    font: { fontFamily:'Arial', fontSize: 10 },
+    left: 10, 
+    top: 45,
+    width: 200
+},
+"#hiddenLbl":{
+	width:100,
+	left:0,
+	height: Ti.UI.FILL,
+	color: "#fff",
+	textAlign:"right",
+	font: {fontFamily: "Arial", fontSize: 14}
+},
+"#rightButton":{
+	color: "#999",
+	borderColor:"#999",
+	borderWidth: 3,
+	borderRadius:15,
+	width:30,
+	height: 30,
+	font: {fontFamily: "Arial", fontSize: 25},
+	textAlign:"center",
+	touchEnabled: false
+},
+"#rightButton[platform=android]":{
+	borderRadius: 30,
+},
+".itemContainer":{
+	backgroundColor: "#EEE"
+}

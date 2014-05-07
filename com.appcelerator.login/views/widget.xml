@@ -1,0 +1,60 @@
+<Alloy>
+	<Window id="wrapper">
+		<!-- Main Container for the Forms -->
+		<View id="loginContainer">
+			
+			<!-- Header Image -->
+			<ImageView id="header"/>
+			
+			<!-- Form Body -->
+			<View id="bodyContainer">
+				
+				<!-- Login Form -->
+				<View id="loginView">
+					<Label class="loginLblTxt">Email</Label>
+					<TextField class="loginTxt" id="usernameTxt" onReturn="focusPassword" onFocus="focusStyle" onBlur="blurStyle"/>
+					<Label class="loginLblTxt">Password</Label>
+					<TextField class="loginTxt" id="passwordTxt" onFocus="focusStyle" onBlur="blurStyle"/>
+					<View class="controlContainer">
+						<ImageView id="helpImg" onClick="forgotClick"/>
+						<Label class="loginLbl" id="forgotLbl" onClick="forgotClick">Forgot Password</Label>
+						<View class="button" id="loginBtn" onClick="loginClick">
+							<Label id="loginLbl" class="buttonLabel">Login</Label>
+						</View>		
+					</View>
+					
+					<View id="facebookOptionView" visible="false">
+						<View class="separator" />
+						<View id="facebookBtnWrapper">
+							<ImageView id="facebookBtn" onClick="loginFacebook" />
+						</View>
+					</View>
+					<!-- <Button class="button" id="accountBtn" onClick="createAccountClick">Create Account</Button>-->
+				</View>
+				
+				<!-- Password Reminder Form -->
+				<View id="passworReminderView">
+					<Label class="loginLblTxt">Email</Label>
+					<TextField class="loginTxt" id="emailTxt" onFocus="focusStyle" onBlur="blurStyle"/>
+					<View class="controlContainer">
+						<View class="button" id="emailBtn" onClick="remindClick">
+							<Label id="resetLbl" class="buttonLabel">Reset</Label>
+						</View>	
+						<View class="button" id="cancelBtn" onClick="cancelClick">
+							<Label id="cancelLbl" class="buttonLabel">Cancel</Label>
+						</View>	
+					</View>
+				</View>
+				
+				<!-- Create Account Form 
+				<View id="createAccountView">
+					<TextField class="loginTxt" id="usernameNew"/>
+					<TextField class="loginTxt" id="passwordNew"/>
+					<TextField class="loginTxt" id="passwordConfirm"/>
+					<Button class="button" id="createBtn" onClick="createClick">Create Account</Button>
+					<Label class="loginLbl" id="loginLbl" onClick="loginlinkClick">Login</Label>
+				</View> -->
+			</View>
+		</View>
+	</Window>
+</Alloy> 

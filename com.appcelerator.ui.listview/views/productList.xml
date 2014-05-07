@@ -1,0 +1,47 @@
+<Alloy>
+		<ListView id="wrapper" defaultItemTemplate="template">
+
+            <!-- The Templates tag sets the ListView's templates property -->
+
+            <Templates>
+
+                <!-- Define your item templates within the Templates tags or use the
+                     Require tag to include a view that only contains an ItemTemplate -->
+
+                <ItemTemplate name="template" id="listTemplate">
+                	<View class="itemContainer">
+                		<View id="iconWrapper" onClick="onIconClick">
+                			<ImageView bindId="pic" id="icon" />
+                		</View>
+	                	
+	                	<View id="detailWrapper" onTouchmove="onListItemTouchMoveAndroid"> 
+	                		<View id="hiddenView">
+	                			<Label bindId="hiddenLbl" id="hiddenLbl">
+	                		</View>
+	                		<View id="detailView" onTouchmove="onListItemTouchMove" onTouchend="onListItemTouchEnd">
+	                			<Label bindId="title" id="title" />
+			                    <Label bindId="subtitle" id="subtitle" />
+			                    <Label bindId="meta" id="meta" />
+			                    
+			                    <View id="buttonWrapper" onClick='onButtonClick'>
+			                    	<Label bindId="rightButton" id="rightButton" />
+			                    </View>
+	                		</View>
+	                	</View>
+                	</View>
+                </ItemTemplate>
+
+            </Templates> 
+             
+            <ListSection>
+                <!--
+                	Example of how you would hardcode an item to be loaded within the XML
+                	<ListItem title:text="Appcelerator" subtitle:text="Mobile Software" meta:text="25077 followers" hiddenLbl:text="Slide >" pic:image="/images/corejs.png" rightButton:text="+"/>
+               -->
+                <ListItem title:text="Appcelerator" subtitle:text="Mobile Software" meta:text="25077 followers" hiddenLbl:text="Slide >" pic:image="/images/corejs.png" rightButton:text="+"/>
+                <ListItem title:text="Appcelerator" subtitle:text="Mobile Software" meta:text="25077 followers" hiddenLbl:text="Slide >" pic:image="/images/corejs.png" rightButton:text="+"/>
+                <ListItem title:text="Appcelerator" subtitle:text="Mobile Software" meta:text="25077 followers" hiddenLbl:text="Slide >" pic:image="/images/corejs.png" rightButton:text="+"/>
+                
+            </ListSection>
+        </ListView>
+</Alloy>

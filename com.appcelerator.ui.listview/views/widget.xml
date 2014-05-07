@@ -1,0 +1,6 @@
+<Alloy>
+	<View class="wrapper">
+		<View class="smokedglass" />
+		<TextArea>Thank you for using the com.appcelerator.ui.listview widget. By default you have reached this message.\n\nTo access one of the customized ListViews, please leverage the specific view when referencing the Widget.</TextArea>
+	</View>
+</Alloy>

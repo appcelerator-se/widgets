@@ -1,0 +1,75 @@
+Gauge Widget
+
+Modeled after the Mint Budget Visualization
+
+Widget height is fixed and width fills to parent container size
+
+Widget has a default setting and can be configured at instantiation time via XML, TSS or JS and can also be modified at run time using built-in methods in JS
+
+
+* Arguments:
+percent (number from 1-100)
+color (titanium color)
+overlayText (string)
+overlayColor (titanium color)
+
+
+* Methods:
+setPercent
+setGaugeColor
+setGaugeBackgroundColor
+setOverlayText
+setOverlayTextColor
+
+
+Sample instantiation:
+
+* Add Widget com.leorbrenman.gtigauge to project/app/widgets folder
+
+* Add dependency to config.json
+
+"dependencies": {
+	"com.leorbrenman.tigauge": "1.0"
+}
+
+* Add widget to screen as follows:
+
+(A) In XML
+<Widget id='myGauge1' src="com.leorbrenman.tigauge" color="#4ba90a" percent="20" overlayText="$200" titleText="Budget: April" />
+
+and position and size in a view as follows:
+
+<View top="50dp" height="Ti.UI.SIZE" width="200" left="10">
+	<Widget id='myGauge1' src="com.leorbrenman.tigauge" color="#4ba90a" percent="20" overlayText="$200" titleText="Budget: April" />
+</View>
+
+or
+
+(B) In JS
+var myGauge = Alloy.createWidget("com.leorbrenman.tigauge", {
+	percent: 33,
+	color: "pink",
+	titleText: "Budget: July",
+	overlayText: "33%"
+});
+$.sv.add(myGauge.getView());
+
+or
+
+(C) Combination:
+
+<Widget id='myGauge2' src="com.leorbrenman.tigauge"/>
+
+AND
+
+$.myGauge2.setPercent("88");
+$.myGauge2.setBackgroundColor("black");
+$.myGauge2.setOverlayText("88%");
+
+OR
+
+"#myGauge1": {
+	 gaugeColor: "#4ba90a",
+	 percent: "40",
+	 overlayText: "$200M",
+}

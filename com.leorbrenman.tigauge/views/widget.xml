@@ -1,0 +1,9 @@
+<Alloy>
+	<View  height="Ti.UI.SIZE">
+		<View id="tiGaugeVw">
+			<View id="tiGaugeBGVw" />	
+			<View id="tiGaugeMeterVw" />
+			<Label id="tiGaugeOverlayLbl" />
+		</View>
+	</View>
+</Alloy>

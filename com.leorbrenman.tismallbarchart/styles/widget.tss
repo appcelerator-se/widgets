@@ -1,0 +1,15 @@
+"Label": {
+	color: '#333',
+	font: {
+		fontSize: 10,
+		fontWeight: 'bold'
+	},
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+}
+"#tiChartVw": {
+	// height: "30",
+	// width: "300"
+	// height: Ti.UI.FILL,
+	// width: Ti.UI.FILL
+}

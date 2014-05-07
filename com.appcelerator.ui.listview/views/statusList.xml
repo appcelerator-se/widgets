@@ -1,0 +1,43 @@
+<Alloy>
+		<ListView id="wrapper" defaultItemTemplate="template">
+
+            <!-- The Templates tag sets the ListView's templates property -->
+
+            <Templates>
+
+                <!-- Define your item templates within the Templates tags or use the
+                     Require tag to include a view that only contains an ItemTemplate -->
+
+                <ItemTemplate name="template">
+                	<View id='itemContainer'>
+						<ImageView id='profilePic' bindId="profilePic" />
+						<Label id='profileName' bindId="profileName" />
+						<Label id='timeAgo' bindId="timeAgo"  />
+						<Label id='status' bindId="status" />
+						<View id='grayLine' />
+						<View id='bottomActions'>
+							<View class='itemActionButton'>
+								<ImageView id='likeBtn' onClick="onClickLikeButton"></ImageView>
+							</View>
+							<View  class='itemActionButton'>
+								<ImageView id='commentBtn' ></ImageView>
+							</View>
+						</View>
+					</View>
+                </ItemTemplate>
+
+            </Templates> 
+             
+            <ListSection>
+                <!--
+                	Example of how you would hardcode an item to be loaded within the XML
+                	<ListItem title:text="Appcelerator" subtitle:text="Mobile Software" meta:text="25077 followers" hiddenLbl:text="Slide >" pic:image="/images/corejs.png" rightButton:text="+"/>
+                -->
+                <ListItem profilePic:image="/images/corejs.png" profileName:text="Bert Grantges" timeAgo:text="30 minutes ago" status:text="Working on som cool Appcelerator Widgets!" />
+                <ListItem profilePic:image="/images/corejs.png" profileName:text="Bert Grantges" timeAgo:text="30 minutes ago" status:text="Working on som cool Appcelerator Widgets!" />
+                <ListItem profilePic:image="/images/corejs.png" profileName:text="Bert Grantges" timeAgo:text="30 minutes ago" status:text="Working on som cool Appcelerator Widgets!" />
+                <ListItem profilePic:image="/images/corejs.png" profileName:text="Bert Grantges" timeAgo:text="30 minutes ago" status:text="Working on som cool Appcelerator Widgets!" />
+                
+            </ListSection>
+        </ListView>
+</Alloy>

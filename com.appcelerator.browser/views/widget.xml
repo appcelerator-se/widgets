@@ -1,0 +1,21 @@
+<Alloy>
+	<View id="wrapper">
+		<View id="header">
+			<!-- iOS, MobileWeb and Blackberry support the back button character -->
+			<View id="browserNavigation" platform="ios,mobileweb,blackberry">
+				<Label id="backBtn" text="\u25C4"/>
+				<Label id="forwardBtn" text="\u25BA"/>
+			</View>
+			<!-- Back button is not available on android, so using different codes -->
+			<View id="browserNavigation" platform="android">
+				<Label id="backBtn" text="\u25C0"/>
+				<Label id="forwardBtn" text="\u25B6"/>
+			</View>
+			<Label id="title" />
+			<Label id="closeBtn" text="\u2715" />
+		</View>
+		<WebView id="webView" url="http://www.appcelerator.com">
+			<!-- LOADED DYNAMICALLY BY DEVELOPER using the widget .setHTML or .setURL functions -->
+		</WebView>
+	</View>
+</Alloy>

@@ -1,0 +1,175 @@
+".loginLbl" : {
+	height:25,
+	color: "#606060",
+	font: {fontSize: 12},
+	shadowOffset: 1,
+	shadowColor: "#363636"
+},
+".loginLblTxt":{
+	color: "#fff",
+	height: 30, 
+	top: 10,
+	left: 20,
+	width: Ti.UI.SIZE,
+},
+".loginLblTxt[platform=ios]":{
+	color: "#fff",
+},
+
+".loginTxt" : {
+	color: "#fff",
+	height: 50,
+	left: 20,
+	right: 20,
+	backgroundColor: "#2D3442",
+	paddingLeft:15,
+	autocapitalize:false,
+	autocorrect:false,
+	borderWidth: 0
+},
+".button" : {
+	height:44,
+	top:0,
+	backgroundColor: "#5A86AF",
+	borderRadius: 5
+},
+".buttonLabel" : {
+	color:"#fff",
+	font:{fontSize:14},
+	textAlign:"center",
+	height:Ti.UI.SIZE,
+	width:Ti.UI.SIZE
+},
+"#wrapper" : {
+	backgroundColor: "#000",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+  	navBarHidden: true
+},
+"#loginContainer" : {
+	backgroundColor: "#141925",
+	width:319,
+	height:164,
+	layout:"vertical"
+},
+"#bodyContainer" : {
+	top:0,
+	height:Ti.UI.SIZE
+},
+"#loginView" : {
+	top:0,
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	layout: "vertical",
+	opacity:0.0
+},
+"#passworReminderView" : {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	layout: "vertical",
+	opacity: 0,
+	visible: false,
+	top:0
+},
+"#createAccountView" : {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+	layout: 'vertical',
+	opacity: 0
+},
+"#header" : {
+	height:140,
+	width:Ti.UI.SIZE,
+	top:20,
+	image:WPATH("/images/header.png")
+},
+"#header[platform=blackberry]":{
+	width: 309
+},
+".controlContainer" : {
+	top : 17,
+	left: 20,
+	right: 20,
+	height:Ti.UI.SIZE
+},
+"#loginBtn" : {
+	width:100,
+	right:3
+},
+"#facebookOptionView":{
+	width: Ti.UI.FILL,
+	height: 100,
+	layout: 'vertical'	
+},
+"#facebookBtnWrapper":{
+	height:Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+},
+"#facebookBtn":{
+	top: 10,
+	image:WPATH("/images/facebook-btn.png"),
+	height: 41,
+	width: Ti.UI.SIZE
+},
+".separator":{
+	top: 20,
+	height: 1,
+	width:"90%",
+	backgroundColor: "#fff",
+	opacity:0.5
+},
+
+"#helpImg" : {
+	height:25,
+	width:25,
+	top:10,
+	left:0,
+	image:WPATH("/images/help-btn.png")
+},
+"#helpImg[platform=blackberry]":{
+	top: 10,
+	left:0,
+},
+"#forgotLbl" : {
+	top:10,
+	left:26,
+	color:"#999"
+},
+"#forgotLbl[platform=blackberry]" : {
+	top:10,
+	left: 26
+}
+"#cancelBtn" : {
+	left:3,
+	width:130,
+	color:"#fff",
+	backgroundColor: "#6a6a6a",
+	borderRadius: 5
+},
+"#emailBtn" : {
+	width:130,
+	right:3,
+	color: "#fff"
+},
+"#usernameTxt" : {
+	top: 4,
+	returnKeyType:Ti.UI.RETURNKEY_NEXT
+},
+"#passwordTxt" : {
+	top: 4,
+	passwordMask: true
+},
+"#emailTxt" : {
+	top:4,
+},
+"#usernameNew" : {
+	hintText: "Email"
+},
+"#passwordNew" : {
+	hintText: "Password",
+	passwordMask: true
+},
+"#passwordConfirm" : {
+	hintText: "Confirm Password",
+	passwordMask: true
+}

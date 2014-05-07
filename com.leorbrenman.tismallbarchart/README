@@ -1,0 +1,74 @@
+Bar Chart Widget
+
+Modeled after the Mint Bar Chart Visualization
+
+Widget size can be set or will fills to parent container size
+
+Widget has a default setting and can be configured at instantiation time via XML, TSS or JS and can also be modified at run time using built-in methods in JS
+
+
+* Arguments:
+height (titanium height)
+width (titanium height)
+negativeColor (titanium color)
+displayLegend (titanium boolean)
+displaySpacers (titanium boolean)
+colors (array of titanium colors)
+data (array of 2D data, e.g. [{"month": "Jan", "val": 33}, {"month": "Feb", "val": 7}, ...)
+labelColor (titanium color)
+
+
+* Methods:
+setLegendOnStatus
+setColors
+setNegativeColor
+setSize
+setData
+
+
+Sample instantiation:
+
+* Add Widget com.leorbrenman.tismallbarchart to project/app/widgets folder
+
+* Add dependency to config.json
+
+"dependencies": {
+	"com.leorbrenman.tismallbarchart": "1.0"
+}
+
+* Add widget to screen as follows:
+
+(A) In XML
+<Widget id='mySmallBarChart1' src="com.leorbrenman.tismallbarchart" negativeColor="red" />
+
+and position and size in a view as follows:
+
+<View top="20dp" height="200" left="10" right="10" layout="vertical" borderRadius="8" borderColor="gray">
+	<Label>Monthly Revenue ($B)</Label>
+	<Widget id='mySmallBarChart1' src="com.leorbrenman.tismallbarchart" negativeColor="red" />
+</View>
+
+or
+
+(B) In JS
+var myChart = Alloy.createWidget("com.leorbrenman.tismallbarchart", {});
+$.sv.add(myChart.getView());
+
+or
+
+(C) Combination:
+
+<Widget id='myChart' src="com.leorbrenman.tismallbarchart"/>
+
+AND
+
+$.myChart.setColors(["#168039"]);
+$.myChart.setData([{"month": "Jan", "val": -3}, {"month": "Feb", "val": 11}, {"month": "Mar", "val": 4}, {"month": "Apr", "val": 2} , {"month": "May", "val": -1} , {"month": "May", "val": 7} ,  {"month": "Jun", "val": 5}]);
+
+OR
+
+"#mySmallBarChart2": {
+	data: [{"month": "Jan", "val": 3}, {"month": "Feb", "val": 11}, {"month": "Mar", "val": 4}, {"month": "Apr", "val": 2} , {"month": "May", "val": -11} , {"month": "May", "val": 7} ,  {"month": "Jun", "val": 5},  {"month": "Jul", "val": -5}],
+	negativeColor: "#D74B4B",
+	colors: ["#354B5E"]
+}

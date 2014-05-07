@@ -1,0 +1,33 @@
+"Label": {
+	color: '#333',
+	font: {
+		fontSize: 16,
+		fontWeight: 'bold'
+	},
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+}
+"#tiGaugeOverlayLbl": {
+	color: 'white',
+	left: '5'
+}
+"#tiGaugeTitleLbl": {
+	color: 'black',
+	left: 0
+}
+"#tiGaugeVw": {
+	height: '25',
+	width: '100%',
+	top: '5'
+}
+"#tiGaugeBGVw": {
+	height: Ti.UI.FILL,
+	backgroundColor: '#e5e5e5',
+	borderRadius: '4'
+}
+"#tiGaugeMeterVw": {
+	height: Ti.UI.FILL,
+	backgroundColor: '#4ba90a',
+	borderRadius: '4',
+	right: '50%'
+}

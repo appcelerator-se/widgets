@@ -1,0 +1,78 @@
+"ListView":{
+	backgroundColor: "#EEE"
+},
+"ListView[platform=ios]":{
+	separatorStyle: Titanium.UI.iPhone.ListViewSeparatorStyle.NONE
+},
+"ItemTemplate":{
+	height: "160dp",
+	className:"listRow"
+},
+"ItemTemplate[platform=ios]":{
+	selectionStyle:Titanium.UI.iPhone.ListViewCellSelectionStyle.NONE 
+}, 
+"#itemContainer":{
+	borderColor: "#cacdd8",
+	borderRadius: 3,
+	borderWidth: 1,
+	left: "5dp",
+	top: "5dp",
+	right: "5dp",
+	height: "150dp",
+	width: Ti.UI.FILL,
+	backgroundColor: "#fff"
+},
+"#profilePic":{
+	 width:"66dp",
+	 height:"66dp",
+	 image:"/bert_appc_lecture.jpg",
+	 top:"5dp",
+	 left:"5dp"
+},
+"#profileName":{
+	top: "5dp",
+	left: "80dp",
+	color: "#941100",
+	font: {
+		fontSize : "16dp",
+		fontWeight: "bold"
+	}
+},
+"#timeAgo":{
+	top: "5dp",
+	right: "5dp",
+	color: "#bbbbbb",
+	font: {
+		fontSize : "12dp"
+	}
+},
+"#status":{
+	width: Ti.UI.SIZE,
+	left: "80dp",
+	right: "5dp",
+	top: "25dp",
+	font: {
+		fontSize : "16dp"
+	}
+},
+"#bottomActions":{
+	bottom: 0,
+	height: "50dp",
+	width: Ti.UI.FILL,
+	backgroundColor: "#eff2f5",
+	layout: "horizontal"
+},
+".itemActionButton":{
+	width: "50%",
+	height: "50dp"
+},
+"#likeBtn":{
+	width: "76dp",
+	height: "20dp",
+	image: WPATH("/images/likebtn.png")
+},
+"#commentBtn":{
+	width: "76dp",
+	height: "20dp",
+	image: WPATH("/images/commentbtn.png")
+}

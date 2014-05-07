@@ -1,0 +1,23 @@
+".wrapper":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL
+},
+"TextArea": {
+	color: '#999',
+	backgroundColor:'#ececec',
+	borderRadius: 5,
+	left: 10,
+	right: 10,
+	
+	font: {
+		fontSize: 12,
+	},
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,	
+},
+".smokedglass":{
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: "#000",
+	opacity: 0.6
+}
