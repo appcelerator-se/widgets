@@ -1,0 +1,4 @@
+"#scrollview": {
+    showVerticalScrollIndicator: true,
+    bottom: 0
+}
