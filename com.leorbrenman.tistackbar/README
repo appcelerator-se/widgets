@@ -1,0 +1,77 @@
+Horizontal Stack Bar Chart Widget
+
+Modeled after the Morgan Stanley Wealth Management iPhone Application Asset Allocation chart
+(https://itunes.apple.com/us/app/morgan-stanley-wealth-management/id811512122?mt=8)
+
+Widget size can be set or will fill to parent container size
+
+Widget has a default setting and can be configured at instantiation time via XML, TSS or JS and can also be modified at run time using built-in methods in JS
+
+
+* Arguments:
+height
+width
+displayLegend
+colors
+data
+legend label color
+chart title & color
+
+
+* Methods:
+setLegendOnStatus
+getLegendOnStatus
+setColors
+getColors
+setChartLabelColor
+getChartLabelColor
+setChartTitleColor
+getChartTitleColor
+setChartTitle
+getChartTitle
+clearChartTitle
+setSize
+getSize
+setData
+
+
+Sample instantiation:
+
+* Add Widget com.leorbrenman.tistackbar to project/app/widgets folder
+
+* Add dependency to config.json
+
+"dependencies": {
+	"com.leorbrenman.tistackbar": "1.0"
+}
+
+* Add widget to screen as follows:
+
+(A) In XML
+<Widget height="200" id="chart1" src="com.leorbrenman.tistackbar" chartTitle="ASSET ALLOCATION" chartTitleColor="#2c8fd3" labelColor="gray" />
+
+and position and size in a view as follows:
+
+<View height="200" right="10" left="10" top="50" backgroundColor="#f0f0f0" layout="vertical">
+	<View height="10" />
+	<View right="10" left="10" >
+		<Widget height="200" id="chart1" src="com.leorbrenman.tistackbar" chartTitle="ASSET ALLOCATION" chartTitleColor="#2c8fd3" labelColor="gray" />
+	</View>
+	<View height="10" />
+</View>
+
+or
+
+(B) In JS
+var x = Alloy.createWidget("com.leorbrenman.tistackbar", {});
+$.containerView.add(x.getView());
+
+or
+
+(C) Combination:
+
+<Widget height="200" id="chart1" src="com.leorbrenman.tistackbar" chartTitle="ASSET ALLOCATION" chartTitleColor="#2c8fd3" labelColor="gray" />
+
+AND
+
+$.chart1.setData([{"type": "Equities", "val": 40}, {"type": "Fixed Income", "val": 5}, {"type": "Cash & Eq", "val": 25}, {"type": "Bonds", "val": 20}, {"type": "Alternates", "val": 20}, {"type": "Securities", "val": 5}]);

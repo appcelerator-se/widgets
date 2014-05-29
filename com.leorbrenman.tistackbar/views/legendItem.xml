@@ -1,0 +1,6 @@
+<Alloy>
+	<View id="legendItem" layout="horizontal" height="Ti.UI.SIZE">
+		<View id="legendMarkerVw" />
+		<Label id="legendLbl" />
+	</View>
+</Alloy>

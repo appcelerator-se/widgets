@@ -1,0 +1,49 @@
+"Label": {
+	color: '#333',
+	font: {
+		fontSize: 10,
+		fontWeight: 'bold'
+	},
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE
+}
+"#chartTitleLbl": {
+	font: {
+		fontSize: 14,
+		fontWeight: 'bold'
+	},
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	//textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: 0,
+	top: 0
+}
+"#chartVw": {
+	layout: "vertical",
+	height: Ti.UI.FILL,
+	// width: Ti.UI.FILL
+}
+"#barChartVw": {
+	layout: "horizontal",
+	width: Ti.UI.FILL,
+	height: "25%"
+}
+"#chartLegendVw": {
+	layout: "horizontal",
+	width: Ti.UI.FILL,
+	height: "70%",
+	//backgroundColor: "green",
+	top: "5"
+}
+"#chartLegendLeftVw": {
+	layout: "vertical",
+	width: "50%",
+	height: Ti.UI.FILL,
+	//backgroundColor: "yellow"
+}
+"#chartLegendRightVw": {
+	layout: "vertical",
+	width: "50%",
+	height: Ti.UI.FILL,
+	//backgroundColor: "pink"
+}

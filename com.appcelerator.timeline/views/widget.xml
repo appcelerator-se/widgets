@@ -2,4 +2,8 @@
 	<TableView id="tableView" backgroundColor="white">
 		
 	</TableView>
+	<ImageView id="snapshot" visible="false"/>
+	<View id="loading" visible="false" backgroundColor="#000" opacity="0.75">
+		<ActivityIndicator id="activityIndicator" />
+	</View>
 </Alloy>

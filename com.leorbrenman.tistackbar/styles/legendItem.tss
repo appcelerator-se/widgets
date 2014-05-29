@@ -1,0 +1,8 @@
+"#legendLbl": {
+	font: {fontSize: 12},
+	left: 5
+}
+"#legendMarkerVw": {
+	height: "10",
+	width: "10"
+}

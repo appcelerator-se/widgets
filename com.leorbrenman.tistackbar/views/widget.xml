@@ -1,0 +1,12 @@
+<Alloy>
+	<View id="tiChartVw" height="Ti.UI.FILL" width="Ti.UI.FILL" layout="vertical" >
+		<Label id="chartTitleLbl" />
+		<View id="chartVw">
+			<View id="barChartVw" />	
+			<View id="chartLegendVw">
+				<View id="chartLegendLeftVw" />
+				<View id="chartLegendRightVw" />
+			</View>
+		</View>
+	</View>
+</Alloy>
